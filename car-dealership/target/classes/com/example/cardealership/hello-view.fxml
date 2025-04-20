@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane prefHeight="700.0" prefWidth="550.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cardealership.CarDealershipController">
+  <VBox alignment="CENTER" spacing="10.0" style="-fx-background-color: #001f3f;">
+    <padding>
+      <Insets bottom="250.0" left="250.0" right="250.0" top="250.0" />
+    </padding>
+
+    <!-- Main Header -->
+    <Label style="-fx-font-size: 16px; -fx-font-weight: bold;" text="Car Dealership Store">
+         <effect>
+            <Glow />
+         </effect></Label>
+
+    <!-- Dealership Section -->
+    <Label text="Dealership Name:" />
+    <TextField fx:id="dealershipNameField" promptText="Enter Dealership Name" styleClass="text-field" />
+
+    <Label text="Location:" />
+    <TextField fx:id="locationField" promptText="Enter Location" styleClass="text-field" />
+
+    <!-- Vehicle Section -->
+    <Label text="Vehicle Details:" />
+    <TextField fx:id="colorField" promptText="Color" styleClass="text-field" />
+    <TextField fx:id="makeField" promptText="Make" styleClass="text-field" />
+    <TextField fx:id="modelField" promptText="Model" styleClass="text-field" />
+    <TextField fx:id="doorsField" promptText="Number of Doors" styleClass="text-field" />
+    <TextField fx:id="discountField" promptText="Discount" styleClass="text-field" />
+    <TextField fx:id="priceField" promptText="Price" styleClass="text-field" />
+
+    <Button onAction="#onAddVehicle" styleClass="button" text="Add Vehicle" />
+    <Button onAction="#onViewVehicles" styleClass="button" text="View Vehicles" />
+
+    <!-- Customer Section -->
+    <Label text="Customer Details:" />
+    <TextField fx:id="customerNameField" promptText="Name" styleClass="text-field" />
+    <TextField fx:id="customerAgeField" promptText="Age" styleClass="text-field" />
+    <TextField fx:id="customerAddressField" promptText="Address" styleClass="text-field" />
+    <TextField fx:id="customerPhoneField" promptText="Phone Number" styleClass="text-field" />
+    <TextField fx:id="customerEmailField" promptText="Email" styleClass="text-field" />
+
+    <Button onAction="#onAddCustomer" styleClass="button" text="Add Customer" />
+    <Button onAction="#onViewCustomers" styleClass="button" text="View Customers" />
+
+    <!-- Price Calculation Section -->
+    <Label text="Calculate Vehicle Price:" />
+    <TextField fx:id="vehicleIndexField" promptText="Vehicle Index" styleClass="text-field" />
+    <Button onAction="#onCalculatePrice" styleClass="button" text="Calculate Price" />
+    <!-- Add to Cart Section -->
+    <Label text="Add Vehicle to Cart:" />
+    <TextField fx:id="vehicleIndexField" promptText="Enter Vehicle Index" styleClass="text-field" />
+    <Button onAction="#onAddToCart" styleClass="button" text="Add to Cart" />
+    <!-- View Cart Section -->
+    <Label text="Cart Management:" />
+    <Button onAction="#showCart" styleClass="button" text="View Cart" />
+    <!-- File Management Section -->
+    <Label text="File Management:" />
+    <Button onAction="#onSaveInventory" styleClass="button" text="Save Inventory" />
+    <Button onAction="#onLoadInventory" styleClass="button" text="Load Inventory" />
+    <Button onAction="#onSaveCustomers" styleClass="button" text="Save Customers" />
+    <Button onAction="#onLoadCustomers" styleClass="button" text="Load Customers" />
+
+    <!-- Purchase Section -->
+    <Label text="Purchase Items:" />
+    <Button onAction="#onPurchaseItems" styleClass="button" text="Purchase Items" />
+
+    <!-- Testimony Section -->
+    <Label text="Video Testimony:" />
+    <Button onAction="#onUploadVideoTestimony" styleClass="button" text="Upload Video Testimony" />
+
+    <!-- Exit Section -->
+    <Label text="Exit Program:" />
+    <Button onAction="#onExitProgram" styleClass="button" text="Exit Program" />
+
+    <!-- Status Label -->
+    <Label fx:id="statusLabel" style="-fx-text-fill: green;" />
+  </VBox>
+</ScrollPane>

@@ -1,0 +1,74 @@
+.root {
+    -fx-background-color: #001f3f; /* Dark purple background */
+    -fx-font-family: "Segoe UI", Arial, sans-serif; /* Clean font */
+}
+
+/* Styling for all labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff; /* White text for better contrast */
+}
+
+/* Styling for buttons */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #6a11cb, #2575fc); /* Gradient button */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 25; /* Rounded buttons */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 4, 0, 0, 2); /* Add shadow effect */
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #2575fc, #6a11cb); /* Inverted gradient on hover */
+}
+
+/* TextField styling */
+.text-field {
+    -fx-background-color: #2e2e40; /* Darker background for text fields */
+    -fx-border-color: #6a11cb; /* Purple border */
+    -fx-border-radius: 5; /* Slightly rounded corners */
+    -fx-padding: 8 12;
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+/.text-field:focused {
+    -fx-border-color: #2575fc; /* Highlighted border when focused */
+    -fx-effect: dropshadow(gaussian, #2575fc, 8, 0, 0, 0);
+}
+
+/* Custom styling for the status label */
+#statusLabel {
+    -fx-font-size: 13px;
+    -fx-text-fill: #20c997; /* Mint green for success */
+    -fx-font-style: italic;
+}
+
+/* Header styling */
+.header {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10 0;
+    -fx-alignment: center;
+}
+
+/* Card-style layout */
+.card {
+    -fx-background-color: #2e2e40;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-padding: 15;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 8, 0, 0, 4); /* Shadow for depth */
+}
+
+/* Footer styling */
+.footer {
+    -fx-background-color: #1e1e2f;
+    -fx-padding: 10;
+    -fx-text-fill: #808080; /* Gray text */
+    -fx-font-size: 12px;
+    -fx-alignment: center;
+}
